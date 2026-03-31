@@ -76,7 +76,7 @@ func loadConfig() Config {
 }
 
 func (c Config) baseURL() string {
-	return fmt.Sprintf("https://%s.service-now.com/api/now/table", c.Instance)
+	return fmt.Sprintf("https://%s/api/now/table", c.Instance)
 }
 
 // ---------------------------------------------------------------------------
@@ -202,7 +202,7 @@ func usage() {
   snow-tool <table> delete <sys_id>
 
 Environment variables (required):
-  SNOW_INSTANCE   ServiceNow instance subdomain (e.g. dev12345)
+  SNOW_INSTANCE   ServiceNow instance URL (e.g. dev12345.service-now.com)
   SNOW_USER       Basic-auth username
   SNOW_PASSWORD   Basic-auth password
 
