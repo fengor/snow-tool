@@ -18,7 +18,7 @@ Set the following environment variables before running:
 
 | Variable        | Description                               |
 |-----------------|-------------------------------------------|
-| `SNOW_INSTANCE` | Instance subdomain, e.g. `dev12345`       |
+| `SNOW_INSTANCE` | Instance URL, e.g. `dev12345.service-now.com`       |
 | `SNOW_USER`     | Basic-auth username                       |
 | `SNOW_PASSWORD` | Basic-auth password                       |
 
